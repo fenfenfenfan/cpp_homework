@@ -187,8 +187,8 @@ int main()
 		}
 	}
 	Dynamic3Dim<TYPE1, 2, 5, 5> Matrix3;
-	cout << "\nMatrix3 = Matrix2+Matrix1:" << endl;
-	Matrix3 = Matrix2 + Matrix1;
+	cout << "\nMatrix3 = Matrix1:" << endl;
+	Matrix3 = Matrix1;
 	for (int k0 = 0; k0 < 2; k0++)
 	{
 		cout << "layer:" << k0 << endl;
@@ -197,6 +197,22 @@ int main()
 			for (int j0 = 0; j0 < 5; j0++)
 			{
 				a = Matrix3[k0][i0][j0];
+				cout << a << ", ";
+			}
+			cout << endl;
+		}
+	}
+	Dynamic3Dim<TYPE1, 2, 5, 5> Matrix4;
+	cout << "\nMatrix3 = Matrix2+Matrix1:" << endl;
+	Matrix4 = Matrix2 + Matrix1;
+	for (int k0 = 0; k0 < 2; k0++)
+	{
+		cout << "layer:" << k0 << endl;
+		for (int i0 = 0; i0 < 5; i0++)
+		{
+			for (int j0 = 0; j0 < 5; j0++)
+			{
+				a = Matrix4[k0][i0][j0];
 				cout << a << ", ";
 			}
 			cout << endl;
